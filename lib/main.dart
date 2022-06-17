@@ -115,6 +115,7 @@ class _HomePageState extends State<HomePage> {
   _openTransactionFormModal(BuildContext context) {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       builder: (_) {
         return TransactionForm(_addTransaction);
       },
@@ -146,7 +147,7 @@ class _HomePageState extends State<HomePage> {
                   child: AppMenu(_totalDespesas(), _totalReceitas()),
                 ),
                 //Chart(_recentTransactions),
-                Container(
+                SizedBox(
                   height: availableHeight * 0.6,
                   child: TransactionList(_transactions, _deleteTransaction),
                 ),

@@ -37,7 +37,7 @@ class TransactionList extends StatelessWidget {
           )
         : ListView.builder(
             itemCount: transactions.length,
-            padding: EdgeInsets.all(0),
+            padding: const EdgeInsets.all(0),
             itemBuilder: (ctx, index) {
               final tr = transactions[index];
               final type = transactions[index].type;
