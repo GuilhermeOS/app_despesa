@@ -31,6 +31,8 @@ dependencies:
     sdk: flutter
   
   intl:
+  flutter_native_splash: ^2.2.3+1
+  flutter_launcher_icons: ^0.9.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,6 +40,20 @@ dependencies:
   cupertino_icons: ^1.0.2
   select_form_field: ^2.2.0
   month_picker_dialog: ^0.4.0
+
+flutter_native_splash:
+  color: "#403535"
+  image: "assets/images/icon/splash_expense.png"
+  android: true
+  ios: true
+
+flutter_icons:
+  image_path: "assets/images/icon/splash_expense.png"
+  ios: true
+  remove_alpha_ios: true
+  android: "launcher_icon"
+  adaptive_icon_background: "#403535"
+  adaptive_icon_foreground: "assets/images/icon/expenses.png"
 
 dev_dependencies:
   flutter_test:
